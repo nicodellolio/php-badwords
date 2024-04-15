@@ -1,15 +1,11 @@
 <?php
 
-$paragraph = $_GET["paragraph"];
-$bad_word = $_GET["ban"];
-$censure = "***";
+$paragraph = $_GET['paragraph'];
+$bad_word = $_GET['ban'];
+$censure = '***';
 
 $censured_paragraph = str_replace($bad_word, $censure, $paragraph);
 $p_length = strlen($censured_paragraph);
-
-// var_dump($_GET);
-
-// echo $bad_word;
 
 ?>
 
@@ -24,10 +20,10 @@ $p_length = strlen($censured_paragraph);
     
     <div class="php_results">
         <p>
-            <?php echo $censured_paragraph; ?>
+            <?= $censured_paragraph; ?>
         </p>
         <h3>
-            <?php echo " The text lenght is $p_length words long." ?>
+            <?= "The text lenght is $p_length words long." ?>
         </h3>
     </div>
 

@@ -1,6 +1,4 @@
 <?php
-
-
 ?>
 
 <!doctype html>
@@ -44,7 +42,7 @@
                         aria-describedby="helpId"
                         placeholder="What word would you like to ban?"
                     />
-                    <button class="mt-3" type="submit">Submit your idea</button>
+                    <button class="mt-3 btn btn-secondary" type="submit">Submit your idea</button>
                 </div>    
             </form>
             
